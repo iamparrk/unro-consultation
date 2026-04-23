@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>사주 · 자미두수 상담 신청</title>
-  <link rel="icon" type="image/png" href="favicon.png">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7167266876129456"
      crossorigin="anonymous"></script>
   <meta property="og:type" content="website">
@@ -117,27 +116,9 @@
     <h1>당신의 사주,<br><em>깊이 읽어드립니다</em></h1>
     <p class="subtitle">다차원적으로 공부하고 연구하며 한 분 한 분 정성껏 풀어드리는<br>사주 · 자미두수 · 궁합 입니다.</p>
     <div class="tab-wrap">
-      <div style="margin-top:32px;">
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px;">
-    <div style="flex:1;height:1px;background:rgba(26,20,16,0.12);"></div>
-    <div style="font-size:14px;color:#b8860b;letter-spacing:8px;">◈ ◈ ◈</div>
-    <div style="flex:1;height:1px;background:rgba(26,20,16,0.12);"></div>
-  </div>
-  <div class="tab-wrap">
-    <button class="tab-btn active" onclick="switchTab('saju',this)">
-      사주
-      <span class="tab-sub">FOUR PILLARS</span>
-    </button>
-    <button class="tab-btn" onclick="switchTab('ziwei',this)">
-      자미두수
-      <span class="tab-sub">ZIWEI DOUSHU</span>
-    </button>
-    <button class="tab-btn" onclick="switchTab('gunghap',this)">
-      궁합
-      <span class="tab-sub">COMPATIBILITY</span>
-    </button>
-  </div>
-</div>
+      <button class="tab-btn active" onclick="switchTab('saju',this)">사주<span class="tab-sub">FOUR PILLARS</span></button>
+      <button class="tab-btn" onclick="switchTab('ziwei',this)">자미두수<span class="tab-sub">ZIWEI DOUSHU</span></button>
+      <button class="tab-btn" onclick="switchTab('gunghap',this)">궁합<span class="tab-sub">COMPATIBILITY</span></button>
     </div>
   </div>
 
@@ -153,21 +134,21 @@
           <input type="radio" name="s-plan" value="basic"><div class="plan-check"></div>
           <div class="plan-badge badge-basic">기본</div>
           <div class="plan-name">명반 해석</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">50,000</span>35,000<span>원</span></div>
+          <div class="plan-price">35,000<span>원</span></div>
           <div class="plan-desc">타고난 성향 · 강점 · 현재 대운 흐름 분석</div>
         </label>
         <label class="plan-card" id="s-plan-annual" onclick="selectPlan('s','annual')">
           <input type="radio" name="s-plan" value="annual"><div class="plan-check"></div>
           <div class="plan-badge badge-popular">인기</div>
           <div class="plan-name">연간 운세</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">90,000</span>65,000<span>원</span></div>
+          <div class="plan-price">65,000<span>원</span></div>
           <div class="plan-desc">명반 해석 + 2026년 분야별 전체운 · 월별 흐름</div>
         </label>
         <label class="plan-card" id="s-plan-naming" onclick="selectPlan('s','naming')">
           <input type="radio" name="s-plan" value="naming"><div class="plan-check"></div>
           <div class="plan-badge badge-premium">프리미엄</div>
           <div class="plan-name">작명 · 개명</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">200,000</span>150,000<span>원</span></div>
+          <div class="plan-price">150,000<span>원</span></div>
           <div class="plan-desc">사주 원국 기반 · 용신 적용 이름 작명 또는 개명</div>
         </label>
       </div>
@@ -296,21 +277,21 @@
           <input type="radio" name="z-plan" value="basic"><div class="plan-check"></div>
           <div class="plan-badge badge-basic">기본</div>
           <div class="plan-name">명반 해석</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">65,000</span>45,000<span>원</span></div>
+          <div class="plan-price">45,000<span>원</span></div>
           <div class="plan-desc">12궁 배치 · 주요 별 기반 타고난 기질 · 대운 흐름 분석</div>
         </label>
         <label class="plan-card" id="z-plan-annual" onclick="selectPlan('z','annual')">
           <input type="radio" name="z-plan" value="annual"><div class="plan-check"></div>
           <div class="plan-badge badge-popular">인기</div>
           <div class="plan-name">연간 운세</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">120,000</span>85,000<span>원</span></div>
+          <div class="plan-price">85,000<span>원</span></div>
           <div class="plan-desc">명반 해석 + 2026년 유년 분야별 전체운 · 월별 흐름</div>
         </label>
         <label class="plan-card" id="z-plan-naming" onclick="selectPlan('z','naming')">
           <input type="radio" name="z-plan" value="naming"><div class="plan-check"></div>
           <div class="plan-badge badge-premium">프리미엄</div>
           <div class="plan-name">작명 · 개명</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">200,000</span>150,000<span>원</span></div>
+          <div class="plan-price">150,000<span>원</span></div>
           <div class="plan-desc">명궁 · 관록궁 기반 · 운로 흐름에 맞는 이름 작명 또는 개명</div>
         </label>
       </div>
@@ -439,14 +420,14 @@
           <input type="radio" name="g-plan" value="saju"><div class="plan-check"></div>
           <div class="plan-badge badge-basic">사주</div>
           <div class="plan-name">사주 궁합</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">100,000</span>75,000<span>원</span></div>
+          <div class="plan-price">75,000<span>원</span></div>
           <div class="plan-desc">두 사람의 사주 원국 기반 궁합 · 합충 · 관계 흐름 분석</div>
         </label>
         <label class="plan-card" id="g-plan-ziwei" onclick="selectPlan('g','ziwei')">
           <input type="radio" name="g-plan" value="ziwei"><div class="plan-check"></div>
           <div class="plan-badge badge-popular">자미두수</div>
           <div class="plan-name">자미두수 궁합</div>
-          <div class="plan-price"><span style="font-size:13px;color:#aaa;text-decoration:line-through;font-family:'Noto Sans KR',sans-serif;font-weight:400;margin-right:6px;">100,000</span>75,000<span>원</span></div>
+          <div class="plan-price">75,000<span>원</span></div>
           <div class="plan-desc">두 사람의 명반 · 부처궁 기반 궁합 · 인연의 흐름 분석</div>
         </label>
       </div>
