@@ -61,8 +61,8 @@ body { background:#f5f0e8; font-family:'Noto Sans KR',sans-serif; min-height:100
   .card-wrap.active { display:flex; }
 
   .card {
-    width: 800px;
-    height: 800px;
+    width: min(800px, 100vw);
+    height: auto;
     background: #f5f0e8;
     position: relative;
     overflow: hidden;
@@ -230,7 +230,12 @@ body { background:#f5f0e8; font-family:'Noto Sans KR',sans-serif; min-height:100
     z-index: 0;
     user-select: none;
   }
-
+@media(max-width:600px){
+  .card{width:100vw !important;height:auto !important;}
+  .ilgan-grid{grid-template-columns:1fr !important;}
+  .card-inner{padding:20px 16px !important;}
+  .ilgan-symbol{font-size:24px !important;}
+}
 </style>
 </head>
 <body>
