@@ -115,17 +115,8 @@
 <body>
 <div class="container">
 <!-- ══════════ HEADER ══════════ -->
-<div style="display:flex; align-items:center; gap:12px;">
-  <a href="today.html" style="font-family:'Noto Serif KR',serif; font-size:13px; font-weight:600; color:#02204b; text-decoration:none;">오늘의 운세</a>
-  
-  <button onclick="toggleMenu()" style="background:none; border:none; cursor:pointer; display:flex; align-items:center; padding:4px;">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#02204b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
-  </button>
-</div>
+<header style="position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(245,240,232,0.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,20,16,0.1);padding:0 28px;">
+  <div style="max-width:720px;margin:0 auto;height:56px;display:flex;align-items:center;justify-content:space-between;">
 
     <!-- 로고 -->
     <div style="display:flex;align-items:center;gap:10px;">
@@ -133,7 +124,7 @@
       <span style="font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:#02204b;letter-spacing:-0.5px;">운로</span>
     </div>
 
-    <a href="/today.html" style="font-family:'Noto Serif KR',serif;font-size:13px;font-weight:600;color:#02204b;text-decoration:none;margin-right:8px;">오늘의 운세</a>
+    <a href="/today" style="font-family:'Noto Serif KR',serif;font-size:13px;font-weight:600;color:#02204b;text-decoration:none;margin-right:8px;">오늘의 운세</a>
     
     <!-- 햄버거 버튼 -->
     <button onclick="toggleMenu()" style="background:none;border:none;cursor:pointer;padding:8px;display:flex;flex-direction:column;gap:5px;">
@@ -224,17 +215,12 @@
 <!-- 헤더 높이만큼 여백 -->
 <div style="height:56px;"></div>
 
-<div style="display:flex; align-items:center; gap:12px;">
-  <a href="today.html" style="font-family:'Noto Serif KR',serif; font-size:13px; font-weight:600; color:#02204b; text-decoration:none;">오늘의 운세</a>
-  
-  <button onclick="toggleMenu()" style="background:none; border:none; cursor:pointer; display:flex; align-items:center; padding:4px;">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#02204b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
-    </svg>
-  </button>
-</div>
+<script>
+  function toggleMenu() {
+    const drawer = document.getElementById('drawer');
+    const overlay = document.getElementById('overlay');
+    const isOpen = drawer.style.right === '0px';
+    if (isOpen) { closeMenu(); }
     else {
       drawer.style.right = '0px';
       overlay.style.background = 'rgba(0,0,0,0.3)';
